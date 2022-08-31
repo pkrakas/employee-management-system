@@ -19,6 +19,10 @@ export default {
         GET_DEPARTMENTS: `${import.meta.env.VITE_API_URL}/department`,
         ADD_DEPARTMENT: `${import.meta.env.VITE_API_URL}/department`,
         EDIT_DEPARTMENT: `${import.meta.env.VITE_API_URL}/department`,
-        DELETE_DEPARTMENT: `${import.meta.env.VITE_API_URL}/department`
+        DELETE_DEPARTMENT: `${import.meta.env.VITE_API_URL}/department`,
+        GET_DESIGNATIONS: `${import.meta.env.VITE_API_URL}/designation`,
+        ADD_DESIGNATION: `${import.meta.env.VITE_API_URL}/designation`,
+        EDIT_DESIGNATION: `${import.meta.env.VITE_API_URL}/designation`,
+        DELETE_DESIGNATION: `${import.meta.env.VITE_API_URL}/designation`
     }
 }

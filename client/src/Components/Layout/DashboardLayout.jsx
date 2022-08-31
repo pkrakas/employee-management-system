@@ -1,4 +1,4 @@
-import { AppShell, Navbar, Header, useMantineColorScheme, ActionIcon, Divider, MediaQuery, Burger, useMantineTheme } from '@mantine/core'
+import { AppShell, Navbar, Header, useMantineColorScheme, ActionIcon, Divider, MediaQuery, Burger, useMantineTheme, Title } from '@mantine/core'
 import { IconSun, IconMoonStars } from '@tabler/icons'
 import { useState } from 'react';
 import { MainLinks } from './MainLinks';
@@ -21,9 +21,12 @@ export default function DashboardLayout({ children }) {
                         onClick={() => setOpened((o) => !o)}
                         size="md"
                         color={theme.colors.gray[6]}
+                        mt={7}
+                        style={{float: 'left'}}
                     />
                 </MediaQuery>
                 {/* <img src="/img/logo2.png" style={{ height: '50px', marginLeft: 80, marginTop: -3 }} /> */}
+                <Title style={{float: "left"}} size={32}>EMS</Title>
                 <ActionIcon
                     variant="outline"
                     color={dark ? 'yellow' : 'blue'}

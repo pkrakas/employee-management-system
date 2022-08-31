@@ -12,3 +12,8 @@ export const getDepartments = () => axios.get(urls.API.GET_DEPARTMENTS)
 export const addDepartment = data => axios.post(urls.API.ADD_DEPARTMENT, data)
 export const editDepartment = (id, data) => axios.patch(`${urls.API.EDIT_DEPARTMENT}/${id}`, data)
 export const deleteDepartment = id => axios.delete(`${urls.API.EDIT_DEPARTMENT}/${id}`)
+
+export const getDesignations = () => axios.get(urls.API.GET_DESIGNATIONS)
+export const addDesignation = data => axios.post(urls.API.ADD_DESIGNATION, data)
+export const editDesignation = (id, data) => axios.patch(`${urls.API.EDIT_DESIGNATION}/${id}`, data)
+export const deleteDesignation = id => axios.delete(`${urls.API.DELETE_DESIGNATION}/${id}`)
